@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sum of 2 digit</title>
 </head>
 <body>
     <h1>hello world sum of digit</h1>
+    <div>
+        <label for="ip1">Input 1    :   </label>
+        <input type="text" placeholder="Num 1" class="num1"><br><br>
+        <label for="ip2">Input 2    :   </label>
+        <input type="text" placeholder="Num 2" class="num2"><br><br>
+        <button onclick="add()">ADD</button>
+        <br>
+        <br>
+        <h1 id="res"></h1>
+    </div>
+    <script>
+        function add(){
+            const num1 = document.querySelector(".num1").value;
+            const num2 = document.querySelector(".num2").value;
+            document.getElementById("res").textContent = Number(num1) + Number(num2);
+        }
+    </script>
 </body>
 </html>
